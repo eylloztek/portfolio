@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eylül Öztek's terminal-style embedded software portfolio: STM32 firmware, a custom RTOS, AArch64 assembly, virtual machines, device drivers, and control systems.">
+  <meta name="theme-color" content="#15191f">
+  <title>Eylül Öztek — ~/portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#terminal-output">Skip to portfolio</a>
+  <div class="desktop-topbar" aria-hidden="true">
+    <span class="desktop-identity"><span class="system-square">▦</span> WORKSPACE / 01</span>
+    <span class="desktop-label">eylul@workstation: ~/portfolio</span>
+    <span class="desktop-session"><span class="online-indicator"></span> LOCAL SESSION</span>
+  </div>
+
+  <main class="workspace">
+    <div class="terminal-window" aria-label="Terminal-style portfolio window">
+      <header class="window-chrome">
+        <div class="window-controls" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="window-title"><span class="window-icon" aria-hidden="true">&gt;_</span> eylul@workstation: ~/portfolio</div>
+        <div class="window-chrome-right" aria-hidden="true">UTF-8 · bash</div>
+      </header>
+      <div class="tabbar" aria-label="Current terminal tab">
+        <span class="terminal-tab"><span aria-hidden="true">⌁</span> portfolio <span class="tab-active" aria-hidden="true"></span></span>
+        <span class="tab-path">/home/eylul/portfolio</span>
+      </div>
+
+      <nav class="command-toolbar" aria-label="Quick terminal commands">
+        <span class="toolbar-prefix" aria-hidden="true">$</span>
+        <button type="button" data-command="help">help</button>
+        <button type="button" data-command="about">about</button>
+        <button type="button" data-command="skills">skills</button>
+        <button type="button" data-command="projects">projects</button>
+        <button type="button" data-command="contact">contact</button>
+        <span class="toolbar-spacer"></span>
+        <button type="button" data-command="clear" class="toolbar-clear">clear <span aria-hidden="true">↺</span></button>
+      </nav>
+
+      <div class="terminal-layout">
+        <div class="terminal-main">
+          <div class="terminal-output" id="terminal-output" role="region" aria-label="Portfolio content and terminal output" tabindex="0">
+            <div id="initial-session">
+              <div class="boot-line"><span class="dim">Last login:</span> today on pts/0 <span class="boot-divider">·</span> <span class="success">session ready</span></div>
+              <div class="ascii-banner" aria-label="Eylül Öztek, Embedded Software Developer">
+                <pre aria-hidden="true">  _____  __   __ _     _   _  _
+ | ____| \ \ / /| |   | | | || |
+ |  _|    \ V / | |   | | | || |
+ | |___    | |  | |___| |_| || |___
+ |_____|   |_|  |_____|\___/ |_____|</pre>
+                <div class="banner-subtitle">EYLÜL ÖZTEK <span>// EMBEDDED SOFTWARE</span></div>
+              </div>
+              <div class="intro-line"><span class="success">●</span> STM32 / ARM assembly / RTOS / systems programming</div>
+              <div class="intro-line dim">Type <code>help</code> for commands or select a directory on the right.</div>
+
+              <section class="transcript-block" id="about" aria-labelledby="about-heading">
+                <div class="command-line"><span class="user">visitor</span><span class="at">@</span><span class="host">eylul</span><span class="dim">:</span><span class="path">~</span><span class="dollar">$</span> <span class="command-text" id="about-heading">whoami</span></div>
+                <div class="command-result about-result">
+                  <p><strong>Computer engineer building close to the hardware.</strong></p>
+                  <p>I build STM32 firmware, reusable sensor drivers, and low-level software, including an ARM Cortex-M4 RTOS and AArch64 assembly projects. My work connects hardware interfaces, real-time software, and systems programming.</p>
+                  <p class="result-meta"><span class="key">focus</span><span class="punct">=</span><span class="value">embedded software · firmware · hardware/software integration</span></p>
+                </div>
+              </section>
+
+              <section class="transcript-block" id="skills" aria-labelledby="skills-heading">
+                <div class="command-line"><span class="user">visitor</span><span class="at">@</span><span class="host">eylul</span><span class="dim">:</span><span class="path">~</span><span class="dollar">$</span> <span class="command-text" id="skills-heading">cat stack.conf</span></div>
+                <div class="command-result">
+                  <div class="config-header"># tools and technologies</div>
+                  <div class="config-grid">
+                    <div class="config-group"><div class="config-title">[ firmware ]</div><p>C · C++ · STM32 HAL<br>FreeRTOS · custom RTOS<br>ARM Cortex-M · STM32CubeIDE</p></div>
+                    <div class="config-group"><div class="config-title">[ interfaces ]</div><p>I²C · SPI · UART · GPIO<br>ADC · DAC · DMA<br>PWM · timers · EXTI</p></div>
+                    <div class="config-group"><div class="config-title">[ desktop &amp; tooling ]</div><p>Python · PySerial · Tkinter<br>Matplotlib · Pygame<br>Git · CMake · QEMU · Linux</p></div>
+                    <div class="config-group"><div class="config-title">[ assembly &amp; systems ]</div><p>AArch64 · ARM Thumb<br>Bytecode VMs · Linux syscalls<br>Rust</p></div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="transcript-block" id="projects" aria-labelledby="projects-heading">
+                <div class="command-line"><span class="user">visitor</span><span class="at">@</span><span class="host">eylul</span><span class="dim">:</span><span class="path">~</span><span class="dollar">$</span> <span class="command-text" id="projects-heading">ls -lah ~/projects</span></div>
+                <div class="command-result">
+                  <p class="listing-note">total <strong>14</strong> repositories <span class="dim">· select a file to inspect · ↗ opens GitHub</span></p>
+                  <div class="list-heading" aria-hidden="true"><span>ID</span><span>TYPE</span><span>NAME</span><span>GIT</span></div>
+                  <div class="project-list" id="initial-projects">
+                    <div class="project-row"><button data-command="open 1" type="button"><span class="project-id">01</span><span class="project-kind">CONTROL</span><span class="project-name">stm32-pid-temperature-controller<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/stm32-pid-temperature-controller" aria-label="Open STM32 PID Temperature Controller on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 2" type="button"><span class="project-id">02</span><span class="project-kind">CONTROL</span><span class="project-name">stm32-pid-controller<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/stm32-pid-controller" aria-label="Open STM32 PID Controller on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 3" type="button"><span class="project-id">03</span><span class="project-kind">SYSTEM</span><span class="project-name">stm32-signal-generator<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/stm32-signal-generator" aria-label="Open STM32 Signal Generator on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 4" type="button"><span class="project-id">04</span><span class="project-kind">GAME</span><span class="project-name">stm32-space-shooter-game<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/stm32-space-shooter-game" aria-label="Open STM32 Space Shooter Game on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 5" type="button"><span class="project-id">05</span><span class="project-kind">SYSTEM</span><span class="project-name">SmartMotionTracker<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/SmartMotionTracker" aria-label="Open SmartMotionTracker on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 6" type="button"><span class="project-id">06</span><span class="project-kind">DRIVER</span><span class="project-name">at24c256-eeprom-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/at24c256-eeprom-library" aria-label="Open AT24C256 EEPROM Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 7" type="button"><span class="project-id">07</span><span class="project-kind">DRIVER</span><span class="project-name">lis302dl-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/lis302dl-library" aria-label="Open LIS302DL Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 8" type="button"><span class="project-id">08</span><span class="project-kind">DRIVER</span><span class="project-name">2axis-joystick-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/2axis-joystick-library" aria-label="Open 2-Axis Joystick Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 9" type="button"><span class="project-id">09</span><span class="project-kind">DRIVER</span><span class="project-name">adxl345-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/adxl345-library" aria-label="Open ADXL345 Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 10" type="button"><span class="project-id">10</span><span class="project-kind">DRIVER</span><span class="project-name">4x4-keypad-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/4x4-keypad-library" aria-label="Open 4x4 Keypad Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 11" type="button"><span class="project-id">11</span><span class="project-kind">DRIVER</span><span class="project-name">bme280-library<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/bme280-library" aria-label="Open BME280 Library on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 12" type="button"><span class="project-id">12</span><span class="project-kind">VM</span><span class="project-name">a64-bytecode-vm<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/a64-bytecode-vm" aria-label="Open A64 Bytecode VM on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 13" type="button"><span class="project-id">13</span><span class="project-kind">RTOS</span><span class="project-name">ForgeRTOS<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/ForgeRTOS" aria-label="Open ForgeRTOS on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                    <div class="project-row"><button data-command="open 14" type="button"><span class="project-id">14</span><span class="project-kind">ASM</span><span class="project-name">aarch64-crc32<span class="row-slash">/</span></span></button><a href="https://github.com/eylloztek/aarch64-crc32" aria-label="Open AArch64 CRC32 on GitHub" target="_blank" rel="noopener noreferrer">↗</a></div>
+                  </div>
+                  <p class="listing-hint dim">Hint: <code>open 3</code> · <code>projects --type driver</code> · <code>search uart</code></p>
+                </div>
+              </section>
+
+              <section class="transcript-block" id="contact" aria-labelledby="contact-heading">
+                <div class="command-line"><span class="user">visitor</span><span class="at">@</span><span class="host">eylul</span><span class="dim">:</span><span class="path">~</span><span class="dollar">$</span> <span class="command-text" id="contact-heading">cat contact.txt</span></div>
+                <div class="command-result contact-result">
+                  <div><span class="key">email</span><span class="punct">:</span><a href="mailto:eyluloztek2@gmail.com">eyluloztek2@gmail.com ↗</a></div>
+                  <div><span class="key">github</span><span class="punct">:</span><a href="https://github.com/eylloztek" target="_blank" rel="noopener noreferrer">github.com/eylloztek ↗</a></div>
+                  <div><span class="key">linkedin</span><span class="punct">:</span><a href="https://www.linkedin.com/in/iremeyluloztek" target="_blank" rel="noopener noreferrer">linkedin.com/in/iremeyluloztek ↗</a></div>
+                </div>
+              </section>
+              <p class="end-of-file dim"># end of ~/portfolio · run a command below</p>
+            </div>
+            <div id="dynamic-session"></div>
+          </div>
+          <form class="prompt-form" id="prompt-form" autocomplete="off">
+            <label class="prompt-label" for="command-input"><span class="user">visitor</span><span class="at">@</span><span class="host">eylul</span><span class="dim">:</span><span class="path">~</span><span class="dollar">$</span></label>
+            <input id="command-input" name="command" type="text" aria-label="Terminal command" aria-describedby="command-help" placeholder="type a command..." spellcheck="false" autocapitalize="off" autocomplete="off" enterkeyhint="go">
+            <button class="run-command" type="submit" aria-label="Run command">↵</button>
+          </form>
+          <div class="sr-only" id="command-help">Enter help, projects, open followed by a project number, search followed by a keyword, or clear. Use arrow keys to navigate command history.</div>
+          <div id="terminal-announcement" class="sr-only" role="status" aria-live="polite"></div>
+        </div>
+
+        <aside class="terminal-sidebar" aria-label="File explorer and shortcuts">
+          <div class="sidebar-label">EXPLORER <span>↗</span></div>
+          <div class="side-path"><span aria-hidden="true">⌄</span> <strong>~/portfolio</strong></div>
+          <div class="file-tree">
+            <button type="button" data-command="about"><span class="file-icon">≡</span> about.md</button>
+            <button type="button" data-command="skills"><span class="file-icon">≡</span> stack.conf</button>
+            <button type="button" data-command="projects"><span class="file-icon folder">▸</span> projects/ <span class="file-count">14</span></button>
+            <div class="tree-children">
+              <button type="button" data-command="projects --type system"><span class="file-icon folder">▸</span> systems/</button>
+              <button type="button" data-command="projects --type control"><span class="file-icon folder">▸</span> control/</button>
+              <button type="button" data-command="projects --type driver"><span class="file-icon folder">▸</span> drivers/</button>
+              <button type="button" data-command="projects --type game"><span class="file-icon folder">▸</span> game/</button>
+              <button type="button" data-command="projects --type rtos"><span class="file-icon folder">▸</span> rtos/</button>
+              <button type="button" data-command="projects --type vm"><span class="file-icon folder">▸</span> vm/</button>
+              <button type="button" data-command="projects --type assembly"><span class="file-icon folder">▸</span> assembly/</button>
+            </div>
+            <button type="button" data-command="contact"><span class="file-icon">≡</span> contact.txt</button>
+          </div>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-label">SESSION INFO</div>
+          <div class="side-info"><span>shell</span><strong>portfolio / bash</strong></div>
+          <div class="side-info"><span>status</span><strong class="success">● online</strong></div>
+          <div class="side-info"><span>repositories</span><strong>14 indexed</strong></div>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-label">TRY A COMMAND</div>
+          <button class="example-command" type="button" data-command="open 1">$ open 1 <span>↵</span></button>
+          <button class="example-command" type="button" data-command="search i2c">$ search i2c <span>↵</span></button>
+          <button class="example-command" type="button" data-command="neofetch">$ neofetch <span>↵</span></button>
+          <div class="sidebar-bottom"><span class="blink-dot"></span> interactive shell<br><span class="dim">no commands run on your machine</span></div>
+        </aside>
+      </div>
+      <footer class="window-status"><span><span class="status-dot"></span> portfolio:ready</span><span>HTML / CSS / JS <span class="status-separator">│</span> 14 repos</span><span>UTF-8 <span class="status-separator">│</span> EN</span></footer>
+    </div>
+    <p class="desktop-footer">A browser-based terminal interface, not a real Linux shell. <span>© <span id="year">2026</span> Eylül Öztek</span></p>
+  </main>
+</body>
+</html>
