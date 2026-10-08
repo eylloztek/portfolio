@@ -125,7 +125,7 @@ const projects = [
     filters: ["system", "rtos", "assembly"],
     featured: true,
     description:
-      "An in-development preemptive RTOS kernel for STM32F446RE and ARM Cortex-M4, written from scratch in C and ARM Thumb assembly. Current work covers task contexts, SVC/PendSV context switching, SysTick preemption, fixed priorities, and round-robin scheduling; synchronization and IPC are on the roadmap.",
+      "A completed preemptive RTOS kernel for STM32F446RE and ARM Cortex-M4, built from scratch in C and ARM Thumb assembly. It implements task and context management, SVC/PendSV context switching, SysTick preemption, fixed-priority and round-robin scheduling, synchronization, IPC, timing, tracing, and kernel diagnostics.",
     tags: ["C", "ARM Thumb", "Cortex-M4", "STM32F446RE", "RTOS", "SysTick", "PendSV", "CMake"],
     url: "https://github.com/eylloztek/ForgeRTOS"
   },
